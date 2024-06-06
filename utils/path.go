@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+// GetCurrentAbPath 获取当前的绝对路径
 func GetCurrentAbPath() string {
 	dir := getCurrentAbPathByExecutable()
 	tmpDir, _ := filepath.EvalSymlinks(os.TempDir())
